@@ -1,13 +1,13 @@
 // src/App.tsx
-import { CssBaseline } from "@mui/material";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Layout from "./components/Layout";
-import { routes as appRoutes } from "./routes";
+import { BaseStyling } from '@unocha/hpc-ui';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Layout from './components/Layout';
+import { routes as appRoutes } from './routes';
 
 const App = () => {
   return (
     <>
-      <CssBaseline />
+      <BaseStyling />
       <Router>
         <Layout>
           <Routes>
@@ -23,6 +23,6 @@ const App = () => {
       </Router>
     </>
   );
-}
+};
 
 export default App;

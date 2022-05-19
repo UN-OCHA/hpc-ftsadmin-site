@@ -1,5 +1,4 @@
-import { FC, ReactNode } from "react";
-import { Box, CssBaseline } from "@mui/material";
+import { FC, ReactNode } from 'react';
 
 interface LayoutProps {
   children: ReactNode;
@@ -8,21 +7,9 @@ interface LayoutProps {
 const Layout: FC<LayoutProps> = ({ children }) => {
   return (
     <>
-      <CssBaseline />
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "flex-start",
-          minHeight: "100vh",
-          maxWidth: "100vw",
-          flexGrow: 1,
-        }}
-      >
-        {/* <Navbar /> */}
-        {children}
-        {/* <Footer /> */}
-      </Box>
+      {/* <Navbar /> */}
+      {children}
+      {/* <Footer /> */}
     </>
   );
 };
