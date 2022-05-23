@@ -8,7 +8,7 @@ interface Props {
 }
 
 export default (props: Props) => {
-  const loader = dataLoader([], getEnv().model.operations.getOperations);
+  const loader = dataLoader([], getEnv().model.flows.getFlows);
 
   return (
     <AppContext.Consumer>
@@ -32,7 +32,7 @@ export default (props: Props) => {
                 <C.PageTitle>
                   {t.t(lang, (s) => s.navigation.flows)}
                 </C.PageTitle>
-                <div>Hello world</div>
+                {JSON.stringify(data.data)}
               </>
             )}
           </C.Loader>

@@ -48,11 +48,5 @@
     "flows": "Search Funding Flows"
   },
   "routes": {
-    "operations": {
-      "notFound": {
-        "title": "Operation not found",
-        "info": "We were unable to find the operation you were looking for"
-      }
-    }
   }
 }
